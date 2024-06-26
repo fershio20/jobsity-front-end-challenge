@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta Challenge -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jobsity - Design Challenge</title>
+
+    <!-- Assets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com">
+    <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b29cd986a9.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- End assets -->
+</head>
+<body>
+
+<!-- Navigation element -->
+
+<header id="top-navigation" class="d-flex flex-wrap justify-content-center py-3 border-bottom z-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-around">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <!--<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                    <span class="fs-4">Simple header</span>-->
+                    <img class="logo-nav" src="/assets/images/coffee-maker-logo.svg" alt="Coffee Maker Logo">
+                </a>
+
+                <ul class="nav">
+                    <li class="nav-item-list">
+                        <a href="#" class="nav-link-top active" aria-current="page">Program</a>
+                    </li>
+                    <li class="nav-item-list"><a href="#" class="nav-link-top">Gallery</a></li>
+                    <li class="nav-item-list"><a href="#" class="nav-link-top">Reviews</a></li>
+                    <li class="nav-item-list"><a href="#" class="nav-link-top">Partners</a></li>
+                    <li class="nav-item-list"><a href="#" class="nav-link-top">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<!-- Hero section -->
+<section class="hero-section text-white">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-12">
+                <div class="d-flex flex-column align-items-center justify-content-center h-100 text-center">
+                    <div>
+                        <div class="d-flex justify-content-around text-white star-hero-container mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="sub-title sub-title-hero-top position-relative d-inline-block">Intensive program
+                            barista training</p>
+                        <h1>Barista training in
+                            <span class="highlight-text">
+                            Amsterdam
+                            </span>
+                        </h1>
+                        <p class="sub-title">On the basis of the company's largest coffee roasters</p>
+                        <img src="/assets/images/arrow-hero-section-bottom.png" alt="">
+                    </div>
+                    <div>
+                        <a href="#" class="button-arrow-down">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main>
+
+    <!-- Programs Section -->
+    <section id="program-section">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+
+                        <div class="d-flex justify-content-center align-items-center">
+                            <i class="fas fa-star"></i>
+                            <h2 class="mb-0 mx-3">Program</h2>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mt-4">We share their experience and professional barista championships multiple
+                            winners</p>
+                    </div>
+                    <div class="mx-auto">
+                        <ul class="nav nav-underline justify-content-center" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home-tab-pane" type="button" role="tab"
+                                        aria-controls="home-tab-pane" aria-selected="true">Basic
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                        aria-controls="profile-tab-pane" aria-selected="false">PREMIUM
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                        aria-controls="contact-tab-pane" aria-selected="false">PLATINUM
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                 aria-labelledby="home-tab" tabindex="0">
+                                <div class="row py-5">
+                                    <div class="col-6">
+                                        <img src="/assets/images/hero-bg.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="col-6">
+                                        <h3>
+                                            Beginners Course
+                                        </h3>
+                                        <div>
+                                            <p>Certificate</p>
+                                            <p>240 minutes</p>
+                                            <p>1500 <span>usd</span></p>
+                                            <butto class="">Registration</butto>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <h4>Provenance Coffee and basic concepts:</h4>
+                                        <p>
+                                            Legend of the origin of coffee.
+                                        </p>
+                                        <ul>
+                                            <li>Chronicle of the spread of the cofee tree</li>
+                                            <li>What is the cofee?</li>
+                                            <li>The structure of the cofee berry</li>
+                                            <li>Arabica and Robusta</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4>Provenance Coffee and basic concepts:</h4>
+                                        <p>
+                                            Legend of the origin of coffee.
+                                        </p>
+                                        <ul>
+                                            <li>Chronicle of the spread of the cofee tree</li>
+                                            <li>What is the cofee?</li>
+                                            <li>The structure of the cofee berry</li>
+                                            <li>Arabica and Robusta</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4>Provenance Coffee and basic concepts:</h4>
+                                        <p>
+                                            Legend of the origin of coffee.
+                                        </p>
+                                        <ul>
+                                            <li>Chronicle of the spread of the cofee tree</li>
+                                            <li>What is the cofee?</li>
+                                            <li>The structure of the cofee berry</li>
+                                            <li>Arabica and Robusta</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-12">
+                                        <h4>The course also includes:</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                                 tabindex="0">...2
+                            </div>
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                                 tabindex="0">...3
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery-section">
+        <div class="container-fluid px-0 py-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+
+                        <div class="d-flex justify-content-center align-items-center">
+                            <i class="fas fa-star"></i>
+                            <h2 class="mb-0 mx-3">Gallery</h2>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-5 px-5 mt-5" style="background: red">
+            <div class="slider">
+                <div><h3>1</h3></div>
+                <div><h3>2</h3></div>
+                <div><h3>3</h3></div>
+                <div><h3>4</h3></div>
+                <div><h3>5</h3></div>
+                <div><h3>6</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial section -->
+
+    <!-- Partners section -->
+
+    <!-- Questions section -->
+
+
+</main>
+
+
+<footer>
+
+</footer>
+
+<!-- Scripts -->
+<script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(".slider").slick({
+
+        // normal options...
+        infinite: false,
+        dots: true,
+        arrows: true,
+
+        // the magic
+        responsive: [{
+
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                infinite: true
+            }
+
+        }, {
+
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                dots: true
+            }
+
+        }, {
+
+            breakpoint: 300,
+            settings: "unslick" // destroys slick
+
+        }]
+    });
+</script>
+
+
+<!-- End Scripts -->
+</body>
+</html>
