@@ -194,6 +194,29 @@ p{
     opacity: .2;
 }
 
+.coffee-beans-element-1 {
+    max-width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    z-index: 100;
+}
+.coffee-beans-element-2 {
+    max-width: 200px;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    z-index: 100;
+}
+
+.coffee-beans-element-3{
+    max-width: 200px;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    z-index: 100;
+}
+
 .title-program{
     height: 72px;
     display: flex;
