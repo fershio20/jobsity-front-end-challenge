@@ -487,13 +487,15 @@ div#partners-section {
 }
 
 .custom-navigation-slider .slick-dots li button.slick-dot {
-    width: 12px;
+
+    width: 32px;
     height: 32px;
     border-radius: 50%;
     background-color: var(--bs-gray-800);
     border: none;
     cursor: pointer;
     outline: none;
+    scale: 0.3;
 }
 
 .custom-navigation-slider .slick-dots li.slick-active button.slick-dot {
