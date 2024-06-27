@@ -3,8 +3,7 @@
 <head>
     <!-- Meta Challenge -->
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jobsity - Design Challenge</title>
 
@@ -16,18 +15,11 @@
           type="text/css"
           href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-    <link
-            rel="preconnect"
-            href="https://fonts.googleapis.com">
-    <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin>
-    <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-            rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet">
     <script src="https://kit.fontawesome.com/b29cd986a9.js" crossorigin="anonymous"></script>
-
 
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -36,59 +28,89 @@
 <body>
 
 <!-- Navigation element -->
-
-<header id="top-navigation" class="d-flex flex-wrap justify-content-center py-3 border-bottom z-1">
+<header id="top-navigation" class="d-none d-lg-flex flex-wrap justify-content-center py-4 z-1">
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-around">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                    <!--<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                    <span class="fs-4">Simple header</span>-->
                     <img class="logo-nav" src="/assets/images/coffee-maker-logo.svg" alt="Coffee Maker Logo">
                 </a>
 
                 <ul class="nav">
                     <li class="nav-item-list">
-                        <a href="#" class="nav-link-top active" aria-current="page">Program</a>
+                        <a href="#hero-section" class="nav-link-top active" aria-current="page">Program</a>
                     </li>
-                    <li class="nav-item-list"><a href="#" class="nav-link-top">Gallery</a></li>
-                    <li class="nav-item-list"><a href="#" class="nav-link-top">Reviews</a></li>
-                    <li class="nav-item-list"><a href="#" class="nav-link-top">Partners</a></li>
-                    <li class="nav-item-list"><a href="#" class="nav-link-top">Contact</a></li>
+                    <li><i class="fas fa-circle"></i></li>
+                    <li class="nav-item-list"><a href="#gallery-section" class="nav-link-top">Gallery</a></li>
+                    <li><i class="fas fa-circle"></i></li>
+                    <li class="nav-item-list"><a href="#testimonial-section" class="nav-link-top">Reviews</a></li>
+                    <li><i class="fas fa-circle"></i></li>
+                    <li class="nav-item-list"><a href="#partners-section" class="nav-link-top">Partners</a></li>
+                    <li><i class="fas fa-circle"></i></li>
+                    <li class="nav-item-list"><a href="#contact-tab" class="nav-link-top">Contact</a></li>
                 </ul>
             </div>
         </div>
     </div>
-
 </header>
+<nav class="d-block d-lg-none navbar navbar-expand-lg text-bg-light text-white position-absolute w-100 z-1">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Coffee Maker</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#hero-section">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery-section">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonial-section">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#partners-section">Partners</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#questions-section">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
 
 <!-- Hero section -->
-<section class="hero-section text-white position-relative">
+<section id="hero-section" class="hero-section text-white position-relative">
     <div class="container h-100">
         <div class="row h-100">
-            <div class="col-12">
-                <div class="d-flex flex-column align-items-center justify-content-center h-100 text-center">
-                    <div>
-                        <div class="d-flex justify-content-around text-white star-hero-container mb-3">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="sub-title sub-title-hero-top position-relative d-inline-block">Intensive program
-                            barista training</p>
-                        <h1>Barista training in
-                            <span class="highlight-text">
+            <div class="col-12 d-flex flex-column align-items-center justify-content-center h-100 text-center">
+                <div>
+                    <div class="d-flex justify-content-around text-white star-hero-container mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="sub-title sub-title-hero-top position-relative d-inline-block">
+                        Intensive program barista training</p>
+                    <h1>Barista training in
+                        <span class="highlight-text">
                             Amsterdam
                             </span>
-                        </h1>
-                        <p class="sub-title">On the basis of the company's largest coffee roasters</p>
-                        <img src="/assets/images/arrow-hero-section-bottom.png" alt="">
-                    </div>
-                    <div>
-                        <a href="#program-section" class="button-arrow-down">
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                    </div>
+                    </h1>
+                    <p class="sub-title">On the basis of the company's largest coffee roasters</p>
+                    <img src="/assets/images/arrow-hero-section-bottom.png" alt="">
+                </div>
+                <div>
+                    <a href="#program-section" class="button-arrow-down">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -102,838 +124,323 @@
 
     <!-- Programs Section -->
     <section id="program-section">
-        <div class="coffee-beans-element-2">
+        <div class="coffee-beans-element-2 d-none d-md-block">
             <img class="w-100" src="assets/images/coffee-elemnts-2.png" alt="">
         </div>
-        <div class="coffee-beans-element-3">
+        <div class="coffee-beans-element-3 d-none d-md-block">
             <img class="w-100" src="assets/images/coffee-elemnts-3.png" alt="">
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center">
-
-                        <div class="d-flex justify-content-center align-items-center">
-                            <i class="fas fa-star"></i>
-                            <h2 class="mb-0 mx-3">Program</h2>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="mt-4">We share their experience and professional barista championships multiple
-                            winners</p>
-                    </div>
-                    <div class="mx-auto mt-5">
-                        <ul class="nav nav-underline justify-content-center" id="program-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                        data-bs-target="#home-tab-pane" type="button" role="tab"
-                                        aria-controls="home-tab-pane" aria-selected="true">BASIC
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-                                        data-bs-target="#profile-tab-pane" type="button" role="tab"
-                                        aria-controls="profile-tab-pane" aria-selected="false">PREMIUM
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
-                                        data-bs-target="#contact-tab-pane" type="button" role="tab"
-                                        aria-controls="contact-tab-pane" aria-selected="false">PLATINUM
-                                </button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
-                                 aria-labelledby="home-tab" tabindex="0">
-                                <div class="row py-5 mt-5">
-                                    <div class="col-6">
-                                        <img src="/assets/images/programs-basic.png" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="d-flex flex-column justify-content-between h-100">
-                                            <div class="position-relative program-detail-title">
-                                                <h3 class="mb-4 mt-1 sub-title fw-bolder title-program">
-                                                    Beginners Course
-                                                </h3>
-                                                <h1 class="floating-text">Basic</h1>
-                                            </div>
-                                            <div class="">
-                                                <ul class="list-unstyled mb-0">
-                                                    <li class="d-flex align-items-start">
-                                                        <img src="/assets/images/checklist-icon.svg" alt="">
-                                                        <p class="ms-3">Certificate</p>
-                                                    </li>
-                                                    <li class="d-flex align-items-start">
-                                                        <img src="/assets/images/clock-icon.svg" alt="">
-                                                        <p class="ms-3">240 minutes</p>
-                                                    </li>
-                                                </ul>
-                                                <p class="program-cost">1500<span class="cost-unity">usd</span></p>
-                                                <button class="btn btn-dark btn-coffee">
-                                                    Registration
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-4 pe-5">
-                                            <hr>
-                                            <p class="title fw-bolder title-program">Provenance Coffee and basic
-                                                concepts:</p>
-                                            <ul class="ps-1 program-features-list">
-                                                <li><p>
-                                                    Legend of the origin of coffee.
-                                                </p></li>
-                                                <li>
-                                                    <p>Chronicle of the spread of the cofee tree</p>
-                                                </li>
-                                                <li>
-                                                    <p>What is the cofee?</p>
-                                                </li>
-                                                <li>
-                                                    <p>The structure of the cofee berry</p>
-                                                </li>
-                                                <li>
-                                                    <p>Arabica and Robusta</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4 px-2">
-                                            <hr>
-                                            <p class="title fw-bolder title-program">
-                                                COFFEE PRODUCTION TECHNOLOGY:</p>
-
-                                            <ul class="ps-1 program-features-list">
-                                                <li>
-                                                    <p>
-                                                        Legend of the origin of coffee.
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p>Chronicle of the spread of the cofee tree</p>
-                                                </li>
-                                                <li>
-                                                    <p>What is the cofee?</p>
-                                                </li>
-                                                <li>
-                                                    <p>The structure of the cofee berry</p>
-                                                </li>
-                                                <li>
-                                                    <p>Arabica and Robusta</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4 ps-5">
-                                            <hr>
-                                            <p class="title fw-bolder title-program">
-                                                roasting Technology <br>
-                                                bean. and Stage<br>
-                                                types of roasting.
-                                            </p>
-                                            <ul class="ps-1 program-features-list">
-                                                <li>
-                                                    <p>Chronicle of the spread of the cofee tree</p>
-                                                </li>
-                                                <li>
-                                                    <p>What is the cofee?</p>
-                                                </li>
-                                                <li>
-                                                    <p>The structure of the cofee berry</p>
-                                                </li>
-                                                <li>
-                                                    <p>Arabica and Robusta</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p class="title fw-bolder title-program">The course also includes:</p>
-                                        <table class="table table-bordered">
-
-                                            <tbody>
-                                            <tr>
-                                                <td class="checks-tables">
-                                                    <i class="fas fa-check text-success"></i>
-                                                </td>
-                                                <td>
-                                                    <p>
-                                                        Coffee machine and grinder - practice - types of coffee machines
-                                                        and coffee grinders
-                                                    </p>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables">
-                                                    <i class="fas fa-check text-success"></i>
-                                                </td>
-                                                <td>
-                                                    <p>
-                                                        What makes professional coffee machines and coffee grinders.
-                                                    </p>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Main components of coffee machines and coffee-Lathes,
-                                                        autolathes. Their purpose
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        How to choose a coffee machine and coffee grinder
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        The structure of the machine. How to maintain, clean and
-                                                        customize coffee machine
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        The structure of the grinders. How to maintain, clean and
-                                                        customize coffee Molko
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables">
-                                                    <i class="fas fa-check text-success"></i>
-                                                </td>
-                                                <td>
-                                                    <p>
-                                                        Making beverages - praktika- machines and espresso rules
-                                                    </p>
-                                                </td>
-
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Technology and regulations frothed milk
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Technology and regulations frothed milk
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Technology and regulations frothed milk
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Terms of tasting coffee
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Terms of preparation of standard drinks line: espresso,
-                                                        cappuccino, latte and others.
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Latte Art - Features practice and the importance of Latte Art in
-                                                        business and the barista
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        1 views Latte Art - Pitching
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        4 views Latte Art - chocolate chip stencils
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+            <div class="text-center">
+                <div class="d-flex justify-content-center align-items-center">
+                    <i class="fas fa-star"></i>
+                    <h2 class="mb-0 mx-3">Program</h2>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="mt-4">We share their experience and professional barista championships multiple winners</p>
+            </div>
+            <div class="mx-auto mt-5">
+                <ul class="nav nav-underline justify-content-center" id="program-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab"
+                                aria-controls="home-tab-pane" aria-selected="true">BASIC
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">PREMIUM
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                aria-controls="contact-tab-pane" aria-selected="false">PLATINUM
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                         aria-labelledby="home-tab" tabindex="0">
+                        <div class="row py-4 py-md-5 mt-0 mt-md-5">
+                            <div class="col-md-6">
+                                <img src="/assets/images/programs-basic.png" alt="" class="img-fluid">
                             </div>
-                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
-                                 aria-labelledby="profile-tab"
-                                 tabindex="0">
-                                <div class="row py-5 mt-5">
-                                    <div class="col-6">
-                                        <img src="/assets/images/programs-basic.png" alt="" class="w-100">
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-between h-100">
+                                    <div class="position-relative program-detail-title">
+                                        <h3 class="mb-4 mt-1 sub-title fw-bolder title-program">Beginners Course</h3>
+                                        <h1 class="floating-text">Basic</h1>
                                     </div>
-                                    <div class="col-6">
-                                        <div class="d-flex flex-column justify-content-between h-100">
-                                            <div class="position-relative program-detail-title">
-                                                <h3 class="mb-4 mt-1 sub-title fw-bolder title-program">
-                                                    Premium Course
-                                                </h3>
-                                                <h1 class="floating-text">Premium</h1>
-                                            </div>
-                                            <div class="">
-                                                <ul class="list-unstyled mb-0">
-                                                    <li class="d-flex align-items-start">
-                                                        <img src="/assets/images/checklist-icon.svg" alt="">
-                                                        <p class="ms-3">Certificate</p>
-                                                    </li>
-                                                    <li class="d-flex align-items-start">
-                                                        <img src="/assets/images/clock-icon.svg" alt="">
-                                                        <p class="ms-3">240 minutes</p>
-                                                    </li>
-                                                </ul>
-                                                <p class="program-cost">2000<span class="cost-unity">usd</span></p>
-                                                <button class="btn btn-dark btn-coffee">
-                                                    Registration
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-4 pe-5">
-                                            <hr>
-                                            <p class="title fw-bolder title-program">Provenance Coffee and basic
-                                                concepts:</p>
-                                            <ul class="ps-1 program-features-list">
-                                                <li><p>
-                                                    Legend of the origin of coffee.
-                                                </p></li>
-                                                <li>
-                                                    <p>Chronicle of the spread of the cofee tree</p>
-                                                </li>
-                                                <li>
-                                                    <p>What is the cofee?</p>
-                                                </li>
-                                                <li>
-                                                    <p>The structure of the cofee berry</p>
-                                                </li>
-                                                <li>
-                                                    <p>Arabica and Robusta</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4 px-2">
-                                            <hr>
-                                            <p class="title fw-bolder title-program">
-                                                COFFEE PRODUCTION TECHNOLOGY:</p>
-
-                                            <ul class="ps-1 program-features-list">
-                                                <li>
-                                                    <p>
-                                                        Legend of the origin of coffee.
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p>Chronicle of the spread of the cofee tree</p>
-                                                </li>
-                                                <li>
-                                                    <p>What is the cofee?</p>
-                                                </li>
-                                                <li>
-                                                    <p>The structure of the cofee berry</p>
-                                                </li>
-                                                <li>
-                                                    <p>Arabica and Robusta</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4 ps-5">
-                                            <hr>
-                                            <p class="title fw-bolder title-program">
-                                                roasting Technology <br>
-                                                bean. and Stage<br>
-                                                types of roasting.
-                                            </p>
-                                            <ul class="ps-1 program-features-list">
-                                                <li>
-                                                    <p>Chronicle of the spread of the cofee tree</p>
-                                                </li>
-                                                <li>
-                                                    <p>What is the cofee?</p>
-                                                </li>
-                                                <li>
-                                                    <p>The structure of the cofee berry</p>
-                                                </li>
-                                                <li>
-                                                    <p>Arabica and Robusta</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p class="title fw-bolder title-program">The course also includes:</p>
-                                        <table class="table table-bordered">
-
-                                            <tbody>
-                                            <tr>
-                                                <td class="checks-tables">
-                                                    <i class="fas fa-check text-success"></i>
-                                                </td>
-                                                <td>
-                                                    <p>
-                                                        Coffee machine and grinder - practice - types of coffee machines
-                                                        and coffee grinders
-                                                    </p>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables">
-                                                    <i class="fas fa-check text-success"></i>
-                                                </td>
-                                                <td>
-                                                    <p>
-                                                        What makes professional coffee machines and coffee grinders.
-                                                    </p>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Main components of coffee machines and coffee-Lathes,
-                                                        autolathes. Their purpose
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        How to choose a coffee machine and coffee grinder
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        The structure of the machine. How to maintain, clean and
-                                                        customize coffee machine
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        The structure of the grinders. How to maintain, clean and
-                                                        customize coffee Molko
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables">
-                                                    <i class="fas fa-check text-success"></i>
-                                                </td>
-                                                <td>
-                                                    <p>
-                                                        Making beverages - praktika- machines and espresso rules
-                                                    </p>
-                                                </td>
-
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Technology and regulations frothed milk
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Technology and regulations frothed milk
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Technology and regulations frothed milk
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Terms of tasting coffee
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Terms of preparation of standard drinks line: espresso,
-                                                        cappuccino, latte and others.
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Latte Art - Features practice and the importance of Latte Art in
-                                                        business and the barista
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        1 views Latte Art - Pitching
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        4 views Latte Art - chocolate chip stencils
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
-                                 aria-labelledby="contact-tab"
-                                 tabindex="0">
-                                <div class="row py-5 mt-5">
-                                    <div class="col-6">
-                                        <img src="/assets/images/programs-basic.png" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="d-flex flex-column justify-content-between h-100">
-                                            <div class="position-relative program-detail-title">
-                                                <h3 class="mb-4 mt-1 sub-title fw-bolder title-program">
-                                                    Platinum Course
-                                                </h3>
-                                                <h1 class="floating-text">Platinum</h1>
-                                            </div>
-                                            <div class="">
-                                                <ul class="list-unstyled mb-0">
-                                                    <li class="d-flex align-items-start">
-                                                        <img src="/assets/images/checklist-icon.svg" alt="">
-                                                        <p class="ms-3">Certificate</p>
-                                                    </li>
-                                                    <li class="d-flex align-items-start">
-                                                        <img src="/assets/images/clock-icon.svg" alt="">
-                                                        <p class="ms-3">240 minutes</p>
-                                                    </li>
-                                                </ul>
-                                                <p class="program-cost">3500<span class="cost-unity">usd</span></p>
-                                                <button class="btn btn-dark btn-coffee">
-                                                    Registration
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-4 pe-5">
-                                            <hr>
-                                            <p class="title fw-bolder title-program">Provenance Coffee and basic
-                                                concepts:</p>
-                                            <ul class="ps-1 program-features-list">
-                                                <li><p>
-                                                    Legend of the origin of coffee.
-                                                </p></li>
-                                                <li>
-                                                    <p>Chronicle of the spread of the cofee tree</p>
-                                                </li>
-                                                <li>
-                                                    <p>What is the cofee?</p>
-                                                </li>
-                                                <li>
-                                                    <p>The structure of the cofee berry</p>
-                                                </li>
-                                                <li>
-                                                    <p>Arabica and Robusta</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4 px-2">
-                                            <hr>
-                                            <p class="title fw-bolder title-program">
-                                                COFFEE PRODUCTION TECHNOLOGY:</p>
-
-                                            <ul class="ps-1 program-features-list">
-                                                <li>
-                                                    <p>
-                                                        Legend of the origin of coffee.
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p>Chronicle of the spread of the cofee tree</p>
-                                                </li>
-                                                <li>
-                                                    <p>What is the cofee?</p>
-                                                </li>
-                                                <li>
-                                                    <p>The structure of the cofee berry</p>
-                                                </li>
-                                                <li>
-                                                    <p>Arabica and Robusta</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4 ps-5">
-                                            <hr>
-                                            <p class="title fw-bolder title-program">
-                                                roasting Technology <br>
-                                                bean. and Stage<br>
-                                                types of roasting.
-                                            </p>
-                                            <ul class="ps-1 program-features-list">
-                                                <li>
-                                                    <p>Chronicle of the spread of the cofee tree</p>
-                                                </li>
-                                                <li>
-                                                    <p>What is the cofee?</p>
-                                                </li>
-                                                <li>
-                                                    <p>The structure of the cofee berry</p>
-                                                </li>
-                                                <li>
-                                                    <p>Arabica and Robusta</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p class="title fw-bolder title-program">The course also includes:</p>
-                                        <table class="table table-bordered">
-
-                                            <tbody>
-                                            <tr>
-                                                <td class="checks-tables">
-                                                    <i class="fas fa-check text-success"></i>
-                                                </td>
-                                                <td>
-                                                    <p>
-                                                        Coffee machine and grinder - practice - types of coffee machines
-                                                        and coffee grinders
-                                                    </p>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables">
-                                                    <i class="fas fa-check text-success"></i>
-                                                </td>
-                                                <td>
-                                                    <p>
-                                                        What makes professional coffee machines and coffee grinders.
-                                                    </p>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Main components of coffee machines and coffee-Lathes,
-                                                        autolathes. Their purpose
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        How to choose a coffee machine and coffee grinder
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        The structure of the machine. How to maintain, clean and
-                                                        customize coffee machine
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        The structure of the grinders. How to maintain, clean and
-                                                        customize coffee Molko
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables">
-                                                    <i class="fas fa-check text-success"></i>
-                                                </td>
-                                                <td>
-                                                    <p>
-                                                        Making beverages - praktika- machines and espresso rules
-                                                    </p>
-                                                </td>
-
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Technology and regulations frothed milk
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Technology and regulations frothed milk
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Technology and regulations frothed milk
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Terms of tasting coffee
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Terms of preparation of standard drinks line: espresso,
-                                                        cappuccino, latte and others.
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        Latte Art - Features practice and the importance of Latte Art in
-                                                        business and the barista
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        1 views Latte Art - Pitching
-                                                    </p>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
-                                                <td>
-                                                    <p>
-                                                        4 views Latte Art - chocolate chip stencils
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                    <div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="d-flex align-items-start">
+                                                <img src="/assets/images/checklist-icon.svg" alt="">
+                                                <p class="ms-3">Certificate</p>
+                                            </li>
+                                            <li class="d-flex align-items-start">
+                                                <img src="/assets/images/clock-icon.svg" alt="">
+                                                <p class="ms-3">240 minutes</p>
+                                            </li>
+                                        </ul>
+                                        <p class="program-cost">1500<span class="cost-unity">usd</span></p>
+                                        <button class="btn btn-dark btn-coffee">Registration</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 pe-md-5">
+                                    <hr>
+                                    <p class="title fw-bolder title-program">Provenance Coffee and basic concepts:</p>
+                                    <ul class="ps-1 program-features-list">
+                                        <li><p>Legend of the origin of coffee.</p></li>
+                                        <li><p>Chronicle of the spread of the coffee tree</p></li>
+                                        <li><p>What is coffee?</p></li>
+                                        <li><p>The structure of the coffee berry</p></li>
+                                        <li><p>Arabica and Robusta</p></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 px-md-2">
+                                    <hr>
+                                    <p class="title fw-bolder
 
+ title-program">COFFEE PRODUCTION TECHNOLOGY:</p>
+                                    <ul class="ps-1 program-features-list">
+                                        <li><p>Legend of the origin of coffee.</p></li>
+                                        <li><p>Chronicle of the spread of the coffee tree</p></li>
+                                        <li><p>What is coffee?</p></li>
+                                        <li><p>The structure of the coffee berry</p></li>
+                                        <li><p>Arabica and Robusta</p></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 ps-md-5">
+                                    <hr>
+                                    <p class="title fw-bolder title-program">Roasting Technology:</p>
+                                    <ul class="ps-1 program-features-list">
+                                        <li><p>Chronicle of the spread of the coffee tree</p></li>
+                                        <li><p>What is coffee?</p></li>
+                                        <li><p>The structure of the coffee berry</p></li>
+                                        <li><p>Arabica and Robusta</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <p class="title fw-bolder title-program">The course also includes:</p>
+                                <table class="table table-bordered">
+                                    <tbody>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-check text-success"></i></td>
+                                        <td><p>Coffee machine and grinder - practice - types of coffee machines and
+                                            coffee grinders</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-check text-success"></i></td>
+                                        <td><p>What makes professional coffee machines and coffee grinders.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
+                                        <td><p>Main components of coffee machines and coffee-Lathes, autolathes. Their
+                                            purpose</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
+                                        <td><p>How to choose a coffee machine and coffee grinder</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
+                                        <td><p>The structure of the machine. How to maintain, clean and customize coffee
+                                            machine</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
+                                        <td><p>The structure of the grinders. How to maintain, clean and customize
+                                            coffee
+                                            Molko</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-check text-success"></i></td>
+                                        <td><p>Making beverages - praktika- machines and espresso rules</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
+                                        <td><p>Technology and regulations frothed milk</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
+                                        <td><p>Technology and regulations frothed milk</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
+                                        <td><p>Technology and regulations frothed milk</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
+                                        <td><p>Terms of tasting coffee</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
+                                        <td><p>Terms of preparation of standard drinks line: espresso, cappuccino, latte
+                                            and others.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
+                                        <td><p>Latte Art - Features practice and the importance of Latte Art in business
+                                            and the barista</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
+                                        <td><p>1 views Latte Art - Pitching</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checks-tables"><i class="fas fa-times text-danger"></i></td>
+                                        <td><p>4 views Latte Art - chocolate chip stencils</p></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                         tabindex="0">
+                        <div class="row py-5 mt-5">
+                            <div class="col-md-6">
+                                <img src="/assets/images/programs-basic.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-between h-100">
+                                    <div class="position-relative program-detail-title">
+                                        <h3 class="mb-4 mt-1 sub-title fw-bolder title-program">Premium Course</h3>
+                                        <h1 class="floating-text">Premium</h1>
+                                    </div>
+                                    <div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="d-flex align-items-start">
+                                                <img src="/assets/images/checklist-icon.svg" alt="">
+                                                <p class="ms-3">Certificate</p>
+                                            </li>
+                                            <li class="d-flex align-items-start">
+                                                <img src="/assets/images/clock-icon.svg" alt="">
+                                                <p class="ms-3">240 minutes</p>
+                                            </li>
+                                        </ul>
+                                        <p class="program-cost">2000<span class="cost-unity">usd</span></p>
+                                        <button class="btn btn-dark btn-coffee">Registration</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 pe-md-5">
+                                    <hr>
+                                    <p class="title fw-bolder title-program">Provenance Coffee and basic concepts:</p>
+                                    <ul class="ps-1 program-features-list">
+                                        <li><p>Legend of the origin of coffee.</p></li>
+                                        <li><p>Chronicle of the spread of the coffee tree</p></li>
+                                        <li><p>What is coffee?</p></li>
+                                        <li><p>The structure of the coffee berry</p></li>
+                                        <li><p>Arabica and Robusta</p></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 px-md-2">
+                                    <hr>
+                                    <p class="title fw-bolder title-program">COFFEE PRODUCTION TECHNOLOGY:</p>
+                                    <ul class="ps-1 program-features-list">
+                                        <li><p>Legend of the origin of coffee.</p></li>
+                                        <li><p>Chronicle of the spread of the coffee tree</p></li>
+                                        <li><p>What is coffee?</p></li>
+                                        <li><p>The structure of the coffee berry</p></li>
+                                        <li><p>Arabica and Robusta</p></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 ps-md-5">
+                                    <hr>
+                                    <p class="title fw-bolder title-program">Roasting Technology:</p>
+                                    <ul class="ps-1 program-features-list">
+                                        <li><p>Chronicle of the spread of the coffee tree</p></li>
+                                        <li><p>What is coffee?</p></li>
+                                        <li><p>The structure of the coffee berry</p></li>
+                                        <li><p>Arabica and Robusta</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                         tabindex="0">
+                        <div class="row py-5 mt-5">
+                            <div class="col-md-6">
+                                <img src="/assets/images/programs-basic.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-between h-100">
+                                    <div class="position-relative program-detail-title">
+                                        <h3 class="mb-4 mt-1 sub-title fw-bolder title-program">Platinum Course</h3>
+                                        <h1 class="floating-text">Platinum</h1>
+                                    </div>
+                                    <div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="d-flex align-items-start">
+                                                <
+
+                                                img src="/assets/images/checklist-icon.svg" alt="">
+                                                <p class="ms-3">Certificate</p>
+                                            </li>
+                                            <li class="d-flex align-items-start">
+                                                <img src="/assets/images/clock-icon.svg" alt="">
+                                                <p class="ms-3">240 minutes</p>
+                                            </li>
+                                        </ul>
+                                        <p class="program-cost">3500<span class="cost-unity">usd</span></p>
+                                        <button class="btn btn-dark btn-coffee">Registration</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 pe-md-5">
+                                    <hr>
+                                    <p class="title fw-bolder title-program">Provenance Coffee and basic concepts:</p>
+                                    <ul class="ps-1 program-features-list">
+                                        <li><p>Legend of the origin of coffee.</p></li>
+                                        <li><p>Chronicle of the spread of the coffee tree</p></li>
+                                        <li><p>What is coffee?</p></li>
+                                        <li><p>The structure of the coffee berry</p></li>
+                                        <li><p>Arabica and Robusta</p></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 px-md-2">
+                                    <hr>
+                                    <p class="title fw-bolder title-program">COFFEE PRODUCTION TECHNOLOGY:</p>
+                                    <ul class="ps-1 program-features-list">
+                                        <li><p>Legend of the origin of coffee.</p></li>
+                                        <li><p>Chronicle of the spread of the coffee tree</p></li>
+                                        <li><p>What is coffee?</p></li>
+                                        <li><p>The structure of the coffee berry</p></li>
+                                        <li><p>Arabica and Robusta</p></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 ps-md-5">
+                                    <hr>
+                                    <p class="title fw-bolder title-program">Roasting Technology:</p>
+                                    <ul class="ps-1 program-features-list">
+                                        <li><p>Chronicle of the spread of the coffee tree</p></li>
+                                        <li><p>What is coffee?</p></li>
+                                        <li><p>The structure of the coffee berry</p></li>
+                                        <li><p>Arabica and Robusta</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
         <div class="coffee-beans">
             <img class="w-100" src="assets/images/coffee-beans-element.png" alt="">
@@ -942,52 +449,47 @@
 
     <!-- Gallery Section -->
     <section id="gallery-section" class="text-white section-img-pattern">
-        <div class="gallery-coffee-top">
+        <div class="gallery-coffee-top  d-none d-md-block">
             <img class="w-100" src="assets/images/gallery/coffee-element-top.png" alt="">
         </div>
 
-        <div class="gallery-coffee-bottom">
+        <div class="gallery-coffee-bottom d-none d-md-block">
             <img class="w-100" src="assets/images/gallery/coffee-element-bottom.png" alt="">
         </div>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center">
-
-                        <div class="d-flex justify-content-center align-items-center">
-                            <img src="assets/images/gallery/element-left.png" alt="">
-                            <h2 class="mb-0 mx-3">Gallery</h2>
-                            <img src="assets/images/gallery/element-right.png" alt="">
-                        </div>
-                        <div class="mt-4">
-                            <p class="mb-0">You yourself are testing the taste benefits of each method<br/>
-                                and select the type of cooking yourself</p>
-                        </div>
-                    </div>
+            <div class="text-center">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="assets/images/gallery/element-left.png" alt="">
+                    <h2 class="mb-0 mx-3">Gallery</h2>
+                    <img src="assets/images/gallery/element-right.png" alt="">
+                </div>
+                <div class="mt-4">
+                    <p class="mb-0">You yourself are testing the taste benefits of each method<br/> and select the type
+                        of
+                        cooking yourself</p>
                 </div>
             </div>
         </div>
         <div class="container-fluid px-0 mt-5">
             <div class="slider-gallery sidebar-arrows-custom">
                 <div class="item">
-                    <img src="/assets/images/gallery/Rectangle-2.png" alt="" class="">
+                    <img src="/assets/images/gallery/Rectangle-2.png" alt="" class="img-fluid">
                 </div>
                 <div class="item">
-                    <img src="/assets/images/gallery/Rectangle.png" alt="" class="">
+                    <img src="/assets/images/gallery/Rectangle.png" alt="" class="img-fluid">
                 </div>
                 <div class="item">
-                    <img src="/assets/images/gallery/Rectangle-1.png" alt="" class="">
+                    <img src="/assets/images/gallery/Rectangle-1.png" alt="" class="img-fluid">
                 </div>
                 <div class="item">
-                    <img src="/assets/images/gallery/Rectangle-2.png" alt="" class="">
+                    <img src="/assets/images/gallery/Rectangle-2.png" alt="" class="img-fluid">
                 </div>
                 <div class="item">
-                    <img src="/assets/images/gallery/Rectangle.png" alt="" class="">
+                    <img src="/assets/images/gallery/Rectangle.png" alt="" class="img-fluid">
                 </div>
                 <div class="item">
-                    <img src="/assets/images/gallery/Rectangle-1.png" alt="" class="">
+                    <img src="/assets/images/gallery/Rectangle-1.png" alt="" class="img-fluid">
                 </div>
-
             </div>
 
             <div class="custom-pager">
@@ -999,90 +501,78 @@
 
     <!-- Testimonial section -->
     <section id="bottom-section" class="position-relative">
-
-        <div id="testimonial-section" class="">
+        <div id="testimonial-section">
             <div class="container px-0">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="text-center">
-
-                            <div class="d-flex justify-content-center align-items-center">
-                                <h2 class="mb-0 mx-3">Testimonial</h2>
-                            </div>
-                            <div class="mt-4">
-                                <p>We have enough patience to teach you the art of coffee</p>
-                            </div>
-                            <div class="container-fluid px-5 mt-5">
-                                <div id="slider-testimonial" class="custom-navigation-slider">
-                                    <div>
-                                        <div class="my-3">
-                                            <img class="mx-auto avatar-testimonial"
-                                                 src="/assets/images/testimonials/avatar-client.png"
-                                                 alt="Coffee Maker Logo">
-                                        </div>
-                                        <p class="title fw-bolder mt-2">Alex Nikandrov</p>
-                                        <p class="w-75 mt-3 mx-auto">
-                                            Our company is grateful for the delicious and freshly roasted coffee in our
-                                            office every day! tOur staff of more than 300 people, appreciate quality and
-                                            flavor of the coffee, because that would be important for our office staff
-                                            were
-                                            every morning refreshed and in a good mood! Recommended!
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <img class="mx-auto avatar-testimonial"
-                                             src="/assets/images/testimonials/avatar-client.png"
-                                             alt="Coffee Maker Logo">
-                                        <p class="title fw-bolder mt-2">Alex Nikandrov</p>
-                                        <p class="w-75 mt-3 mx-auto">
-                                            Our company is grateful for the delicious and freshly roasted coffee in our
-                                            office every day! tOur staff of more than 300 people, appreciate quality and
-                                            flavor of the coffee, because that would be important for our office staff
-                                            were
-                                            every morning refreshed and in a good mood! Recommended!
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <img class="mx-auto avatar-testimonial"
-                                             src="/assets/images/testimonials/avatar-client.png"
-                                             alt="Coffee Maker Logo">
-                                        <p class="title fw-bolder mt-2">Alex Nikandrov</p>
-                                        <p class="w-75 mt-3 mx-auto">
-                                            Our company is grateful for the delicious and freshly roasted coffee in our
-                                            office every day! tOur staff of more than 300 people, appreciate quality and
-                                            flavor of the coffee, because that would be important for our office staff
-                                            were
-                                            every morning refreshed and in a good mood! Recommended!
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <img class="mx-auto avatar-testimonial"
-                                             src="/assets/images/testimonials/avatar-client.png"
-                                             alt="Coffee Maker Logo">
-                                        <p class="title fw-bolder mt-2">Alex Nikandrov</p>
-                                        <p class="w-75 mt-3 mx-auto">
-                                            Our company is grateful for the delicious and freshly roasted coffee in our
-                                            office every day! tOur staff of more than 300 people, appreciate quality and
-                                            flavor of the coffee, because that would be important for our office staff
-                                            were
-                                            every morning refreshed and in a good mood! Recommended!
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <img class="mx-auto avatar-testimonial"
-                                             src="/assets/images/testimonials/avatar-client.png"
-                                             alt="Coffee Maker Logo">
-                                        <p class="title fw-bolder mt-2">Alex Nikandrov</p>
-                                        <p class="w-75 mt-3 mx-auto">
-                                            Our company is grateful for the delicious and freshly roasted coffee in our
-                                            office every day! tOur staff of more than 300 people, appreciate quality and
-                                            flavor of the coffee, because that would be important for our office staff
-                                            were
-                                            every morning refreshed and in a good mood! Recommended!
-                                        </p>
-                                    </div>
+                <div class="text-center">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h2 class="mb-0 mx-3">Testimonial</h2>
+                    </div>
+                    <div class="mt-4">
+                        <p>We have enough patience to teach you the art of coffee</p>
+                    </div>
+                    <div class="container-fluid px-5 mt-5">
+                        <div id="slider-testimonial" class="custom-navigation-slider">
+                            <div>
+                                <div class="my-3">
+                                    <img class="mx-auto avatar-testimonial img-fluid"
+                                         src="/assets/images/testimonials/avatar-client.png"
+                                         alt="Coffee Maker Logo">
                                 </div>
-
+                                <p class="title fw-bolder mt-2">Alex Nikandrov</p>
+                                <p class="w-75 mt-3 mx-auto">
+                                    Our company is grateful for the delicious and freshly roasted coffee in our office
+                                    every day! tOur staff of more than 300 people, appreciate quality and flavor of the
+                                    coffee, because that would be important for our office staff were every morning
+                                    refreshed and in a good mood! Recommended!
+                                </p>
+                            </div>
+                            <div>
+                                <img class="mx-auto avatar-testimonial img-fluid"
+                                     src="/assets/images/testimonials/avatar-client.png"
+                                     alt="Coffee Maker Logo">
+                                <p class="title fw-bolder mt-2">Alex Nikandrov</p>
+                                <p class="w-75 mt-3 mx-auto">
+                                    Our company is grateful for the delicious and freshly roasted coffee in our office
+                                    every day! tOur staff of more than 300 people, appreciate quality and flavor of the
+                                    coffee, because that would be important for our office staff were every morning
+                                    refreshed and in a good mood! Recommended!
+                                </p>
+                            </div>
+                            <div>
+                                <img class="mx-auto avatar-testimonial img-fluid"
+                                     src="/assets/images/testimonials/avatar-client.png"
+                                     alt="Coffee Maker Logo">
+                                <p class="title fw-bolder mt-2">Alex Nikandrov</p>
+                                <p class="w-75 mt-3 mx-auto">
+                                    Our company is grateful for the delicious and freshly roasted coffee in our office
+                                    every day! tOur staff of more than 300 people, appreciate quality and flavor of the
+                                    coffee, because that would be important for our office staff were every morning
+                                    refreshed and in a good mood! Recommended!
+                                </p>
+                            </div>
+                            <div>
+                                <img class="mx-auto avatar-testimonial img-fluid"
+                                     src="/assets/images/testimonials/avatar-client.png"
+                                     alt="Coffee Maker Logo">
+                                <p class="title fw-bolder mt-2">Alex Nikandrov</p>
+                                <p class="w-75 mt-3 mx-auto">
+                                    Our company is grateful for the delicious and freshly roasted coffee in our office
+                                    every day! tOur staff of more than 300 people, appreciate quality and flavor of the
+                                    coffee, because that would be important for our office staff were every morning
+                                    refreshed and in a good mood! Recommended!
+                                </p>
+                            </div>
+                            <div>
+                                <img class="mx-auto avatar-testimonial img-fluid"
+                                     src="/assets/images/testimonials/avatar-client.png"
+                                     alt="Coffee Maker Logo">
+                                <p class="title fw-bolder mt-2">Alex Nikandrov</p>
+                                <p class="w-75 mt-3 mx-auto">
+                                    Our company is grateful for the delicious and freshly roasted coffee in our office
+                                    every day! tOur staff of more than 300 people, appreciate quality and flavor of the
+                                    coffee, because that would be important for our office staff were every morning
+                                    refreshed and in a good mood! Recommended!
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1093,100 +583,86 @@
         <!-- Partners section -->
         <div id="partners-section" class="my-auto">
             <div class="container px-0 py-5">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="text-center">
-
-                            <div class="">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <img src="assets/images/partners/element-black-left.png" alt="">
-                                    <h2 class="mb-0 mx-3">Our Partners</h2>
-                                    <img src="assets/images/partners/element-black-rigth.png" alt="">
-                                </div>
-
-                                <hr class="mx-auto" style="width: 200px">
+                <div class="text-center">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="assets/images/partners/element-black-left.png" alt="">
+                        <h2 class="mb-0 mx-3">Our Partners</h2>
+                        <img src="assets/images/partners/element-black-rigth.png" alt="">
+                    </div>
+                    <hr class="mx-auto" style="width: 200px">
+                    <div class="container-fluid py-5 px-5 mt-5">
+                        <div id="slider-partner" class="custom-navigation-slider">
+                            <div>
+                                <img class="w-100 mx-auto" src="/assets/images/partners/Frame 9.png"
+                                     alt="Coffee Maker Logo">
                             </div>
-                            <div class="container-fluid py-5 px-5 mt-5">
-                                <div id="slider-partner" class="custom-navigation-slider">
-                                    <div>
-                                        <img class="w-100 mx-auto" src="/assets/images/partners/Frame 9.png"
-                                             alt="Coffee Maker Logo">
-                                    </div>
-                                    <div>
-                                        <img class="w-100 mx-auto" src="/assets/images/partners/Frame 4.png"
-                                             alt="Coffee Maker Logo">
-                                    </div>
-                                    <div>
-                                        <img class="w-100 mx-auto" src="/assets/images/partners/Frame 5.png"
-                                             alt="Coffee Maker Logo">
-                                    </div>
-                                    <div>
-                                        <img class="w-100 mx-auto" src="/assets/images/partners/Frame 8.png"
-                                             alt="Coffee Maker Logo">
-                                    </div>
-                                    <div>
-                                        <img class="w-100 mx-auto" src="/assets/images/partners/Frame 6.png"
-                                             alt="Coffee Maker Logo">
-                                    </div>
-                                    <div>
-                                        <img class="w-100 mx-auto" src="/assets/images/partners/Frame 7.png"
-                                             alt="Coffee Maker Logo">
-                                    </div>
-                                    <div>
-                                        <img class="w-100 mx-auto" src="/assets/images/partners/Frame 8.png"
-                                             alt="Coffee Maker Logo">
-                                    </div>
-                                </div>
+                            <div>
+                                <img class="w-100 mx-auto" src="/assets/images/partners/Frame 4.png"
+                                     alt="Coffee Maker Logo">
+                            </div>
+                            <div>
+                                <img class="w-100 mx-auto" src="/assets/images/partners/Frame 5.png"
+                                     alt="Coffee Maker Logo">
+                            </div>
+                            <div>
+                                <img class="w-100 mx-auto" src="/assets/images/partners/Frame 8.png"
+                                     alt="Coffee Maker Logo">
+                            </div>
+                            <div>
+                                <img class="w-100 mx-auto" src="/assets/images/partners/Frame 6.png"
+                                     alt="Coffee Maker Logo">
+                            </div>
+                            <div>
+                                <img class="w-100 mx-auto" src="/assets/images/partners/Frame 7.png"
+                                     alt="Coffee Maker Logo">
+                            </div>
+                            <div>
+                                <img class="w-100 mx-auto" src="/assets/images/partners/Frame 8.png"
+                                     alt="Coffee Maker Logo">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="coffee-section-element-blur">
+        <div class="coffee-section-element-blur d-none d-md-block">
             <img class="w-100" src="assets/images/coffee-element-blur.png" alt="">
         </div>
         <!-- Questions section -->
-        <div id="questions-section" class="position-relative">
-
-            <div class="coffee-element-question coffee-section-element">
+        <div id="questions-section" class="position-relative mx-4 mx-md-0 overflow-hidden">
+            <div class="coffee-element-question coffee-section-element d-none d-md-block">
                 <img class="w-100" src="assets/images/gallery/coffe-question-element.png" alt="">
             </div>
             <div class="container px-0">
                 <div class="row">
-                    <div class="col-4">
-                        <div class="coffee-element-question">
+                    <div class="col-md-4">
+                        <div class="coffee-element-question d-none d-md-block">
                             <img class="w-100" src="assets/images/gallery/coffe-question-element.png" alt="">
                         </div>
                     </div>
-                    <div class="col-8">
-                        <div class="">
-
-                            <div class="">
-                                <h2 class="mb-0">Have Questions?</h2>
-                                <hr>
-                                <p>
-                                  <small>Leave a request and we will contact you shortly</small>
-                                </p>
-                            </div>
-                            <form>
-                                <div class="row mt-5">
-                                    <div class="col-6 align-content-end pe-4">
-                                        <div>
-                                            <input type="text" class="form-control" id="name"
-                                                   placeholder="YOUR NAME"
-                                                   aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="mt-4">
-                                            <input type="text" class="form-control" id="number" placeholder="CONTACT NUMBER">
-                                        </div>
+                    <div class="col-md-8">
+                        <div>
+                            <h2 class="mb-0">Have Questions?</h2>
+                            <hr>
+                            <p><small>Leave a request and we will contact you shortly</small></p>
+                        </div>
+                        <form>
+                            <div class="row mt-5">
+                                <div class="col-md-6 align-content-end pe-md-4">
+                                    <div>
+                                        <input type="text" class="form-control" id="name" placeholder="YOUR NAME"
+                                               aria-describedby="emailHelp">
                                     </div>
-                                    <div class="col-6 align-content-end">
-                                        <button type="submit" class="btn btn-form">SEND</button>
+                                    <div class="mt-4">
+                                        <input type="text" class="form-control" id="number"
+                                               placeholder="CONTACT NUMBER">
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                                <div class="col-md-6 align-content-end mt-4 mt-md-0">
+                                    <button type="submit" class="btn btn-form">SEND</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -1194,97 +670,95 @@
     </section>
 </main>
 
-
 <footer id="footer-section" class="text-bg-dark">
     <div class="container">
+        <div class="text-center mb-5">
+            <h2>Professional School <br>Barista</h2>
+        </div>
         <div class="row">
-            <div class="col-12 mb-5">
-                <div class="text-center">
-
-                    <h2>Professional School <br>Barista</h2>
-                </div>
+            <div class="col-md-6">
+                <p class="small foote-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                    omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                    ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                    enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                    dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                    dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                    labore et dolore magnam aliquam quaerat voluptatem.</p>
             </div>
-            <div class="col-6">
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-                    error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-                    qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                    amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                    dolore magnam aliquam quaerat voluptatem.</p>
-            </div>
-            <div class="col-6">
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-                    error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-                    qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                    amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                    dolore magnam aliquam quaerat voluptatem.</p>
+            <div class="col-md-6">
+                <p class="small foote-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                    omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                    ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                    enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                    dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                    dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                    labore et dolore magnam aliquam quaerat voluptatem.</p>
             </div>
         </div>
         <div class="row mt-5">
             <div class="col-12 text-center">
-                <div>
-                    <div>
-                        <ul class="list-unstyled d-inline-flex flex-row gap-5">
-                            <li>Program</li>
-                            <li>Gallery</li>
-                            <li>Testimonials</li>
-                            <li>Contact</li>
+                <div class="footer-contact">
+                    <div class="py-4 border border-white footer-contact-nav">
+                        <ul class="list-unstyled d-md-inline-flex flex-row gap-5 mb-0">
+                            <li><a href="#program-section">Program</a></li>
+                            <li><i class="fas fa-circle"></i></li>
+                            <li><a href="#gallery-section">Gallery</a></li>
+                            <li><i class="fas fa-circle"></i></li>
+                            <li><a href="#testimonial-section">Testimonials</a></li>
+                            <li><i class="fas fa-circle"></i></li>
+                            <li><a href="#questions-section">Contact</a></li>
                         </ul>
                     </div>
                     <div class="d-flex flex-column">
-                        <div class="d-flex w-100 justify-content-around">
-                            <div>Telephone</div>
-                            <div>Telephone</div>
-                            <div>Telephone</div>
+                        <div class="d-flex w-100 justify-content-around border-bottom border-white">
+                            <div class="border-footer-tab">
+                                <img class="icon-footer-element" src="assets/images/footer/Vector.png" alt="">
+                            </div>
+                            <div class="border-footer-tab">
+                                <img class="icon-footer-element" src="assets/images/footer/Vector-1.png" alt="">
+                            </div>
+                            <div class="border-footer-tab">
+                                <img class="icon-footer-element" src="assets/images/footer/Vector-2.png" alt="">
+                            </div>
                         </div>
                         <div class="d-flex w-100 justify-content-around">
-                            <div>Telephone</div>
-                            <div>Telephone</div>
-                            <div>Telephone</div>
+                            <div class="border-footer-tab">+38 000 000 000</div>
+                            <div class="border-footer-tab">UKRAINE, 61002</div>
+                            <div class="border-footer-tab">HELLO@.COM</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 mt-5">
-                <div class="text-center">
-
-                    <p class="mb-0 small">© Copyright 2017 . All Rights Reserved. <span class="d-inline-block mx-2">|</span>
-                        <span class="text-uppercase fw-bold title">site template by  NIKANDROV.PRO</span></p>
-                </div>
+            <div class="col-12 mt-5 text-center">
+                <p class="mb-0 small">© Copyright 2017 . All Rights Reserved. <span class="d-inline-block mx-2">|</span>
+                    <span class="text-uppercase fw-bold title">site template by NIKANDROV.PRO</span></p>
             </div>
         </div>
     </div>
-
 </footer>
 
 <!-- Scripts -->
-<script
-        src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-        crossorigin="anonymous"></script>
-<script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function () {
-
-
         $('.slider-gallery').on('init', function (event, slick) {
-            $('.current-slide').text(slick.currentSlide + 1);
+            $('.current-slide').text
+
+            (slick.currentSlide + 1);
             $('.total-slides').text(slick.slideCount);
         });
 
@@ -1293,7 +767,6 @@
         });
 
         $(".slider-gallery").slick({
-
             centerMode: true,
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -1310,14 +783,39 @@
             },
             prevArrow: '<button type="button" class="slick-prev"><img src="assets/images/gallery/arrow-carosuel.svg" alt="Previous"></button>',
             nextArrow: '<button type="button" class="slick-next"><img src="assets/images/gallery/arrow-carosuel.svg" alt="Next"></button>',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        centerPadding: '200px'
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        centerPadding: '100px'
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        centerPadding: '50px'
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        centerPadding: '20px',
+                        dots: false,
+                        arrows: false,
+                    }
+                }
+            ]
         });
 
         $("#slider-testimonial").slick({
-
-            // normal options...
-            infinite: false,
+            infinite: true,
             autoplay: true,
-            loop: true,
             autoplaySpeed: 1500,
             dots: true,
             arrows: true,
@@ -1326,47 +824,71 @@
             customPaging: function (slider, i) {
                 return '<button class="slick-dot"></button>';
             },
-            // the magic
-            responsive: [{
-
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    infinite: true
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1
+                    }
                 }
-
-            }, {
-
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    dots: true
-                }
-
-            }, {
-
-                breakpoint: 300,
-                settings: "unslick" // destroys slick
-
-            }]
+            ]
         });
 
         $("#slider-partner").slick({
-
-            // normal options...
             infinite: true,
             autoplay: true,
             dots: false,
             arrows: true,
             slidesToShow: 6,
-            loop: true,
             prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
             nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
         });
     });
-
 </script>
-
 
 <!-- End Scripts -->
 </body>

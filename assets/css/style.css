@@ -78,12 +78,27 @@ p{
     border-radius: 0;
 }
 /* Top Navigation*/
-
+header ul.nav {
+    gap: 1.25rem;
+}
+header ul.nav li.nav-item-list a {
+    font-size: .75rem !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Intro', sans-serif !important;
+}
+.nav .fa-circle{
+    color: var(--bs-gray-100);
+    font-size: .25rem;
+    position: relative;
+    bottom: 4px;
+}
 #top-navigation{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    border-bottom: 1px solid rgb(255 255 255 / 20%);
 }
 .nav-link-top{
     font-family: 'Intro', sans-serif;
@@ -100,14 +115,14 @@ p{
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 19px;
+    padding-bottom: 28px;
     border-bottom: 3px solid var(--accent-color);
 }
 
 .logo-nav{
-    width: 195px;
+    width: 145px;
     position: absolute;
-    top: 20px;
+    top: 0px;
 }
 /* Hero Section*/
 
@@ -588,4 +603,74 @@ footer::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
+}
+
+.footer-contact{
+    border: 1px solid #FFF;
+    background: rgba(0,0,0,.35);
+    font-size: .75rem;
+}
+.footer-contact-nav{
+    font-family: 'Intro', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+.footer-contact-nav .fas.fa-circle {
+    font-size: .35rem;
+}
+
+
+.footer-contact-nav a {
+    text-decoration: none;
+    color: var(--bs-gray-100);
+    transition: 0.35s ease-in-out;
+}
+.footer-contact-nav a:hover{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+.border-footer-tab {
+    width: 100%;
+    padding: 20px 0;
+    border-right: 1px solid #FFF;
+    transition: .35s ease-in-out;
+}
+
+.border-footer-tab:last-child {
+    border-right: none; /* Eliminar el borde derecho del último hijo */
+}
+
+.icon-footer-element{
+    height: 20px;
+}
+
+.border-footer-tab:hover {
+    background: #ffffff24;
+    cursor: pointer;
+}
+
+.foote-text{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    .sub-title-hero-top::before, .sub-title-hero-top::after{
+        display: none;
+    }
+    #program-tab .nav-item{
+        width: auto;
+    }
+    .floating-text{
+        display: none;
+    }
+    .custom-pager{
+        display: none;
+    }.custom-pager{
+        display: none;
+    }
+    #gallery-section {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
 }
