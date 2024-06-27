@@ -487,8 +487,8 @@ div#partners-section {
 }
 
 .custom-navigation-slider .slick-dots li button.slick-dot {
-    width: 8px;
-    height: 12px;
+    width: 12px;
+    height: 32px;
     border-radius: 50%;
     background-color: var(--bs-gray-800);
     border: none;
@@ -672,5 +672,28 @@ footer::before {
     #gallery-section {
         padding-top: 110px;
         padding-bottom: 110px;
+    }
+    .custom-navigation-slider .slick-dots li button.slick-dot {
+        width: 32px;
+        height: 32px;
+        scale: -0.35;
+    }
+
+    #slider-testimonial .slick-prev.slick-arrow{
+        position: absolute;
+        left: -27px;
+        top: 50%;
+        color: #000;
+        border: 0;
+        background-color: transparent;
+    }
+}
+    #slider-testimonial .slick-next.slick-arrow{
+        position: absolute;
+        right: -27px;
+        top: 50%;
+        color: #000;
+        border: 0;
+        background-color: transparent;
     }
 }
